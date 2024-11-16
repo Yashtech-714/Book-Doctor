@@ -1,3 +1,4 @@
+//context--For global declaration of a data that can be used in any component without passing it as a props
 import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import axios from 'axios'

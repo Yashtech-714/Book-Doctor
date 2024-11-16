@@ -6,6 +6,7 @@ export default {
   ],
   theme: {
     extend: {
+      // Responsive grid with columns min 200px wide, growing proportionally to 1fr.
       gridTemplateColumns:{
         'auto':'repeat(auto-fill, minmax(200px, 1fr))'
       },
