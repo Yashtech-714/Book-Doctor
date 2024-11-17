@@ -1,4 +1,5 @@
-//context--For global declaration of a data that can be used in any component without passing it as a props
+//context--For global declaration of a data that can be used in any component without passing it as a props.
+//createContext, which is essentially a container that holds values you want to share across the application.
 import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
 import axios from 'axios'
@@ -10,8 +11,11 @@ const AppContextProvider = (props) => {
     const currencySymbol = '₹'
     const backendUrl = import.meta.env.VITE_BACKEND_URL
 
+    //Array to store the list of doctors fetched from backend
     const [doctors, setDoctors] = useState([])
+    //token stores if already loged in, if no token ..stores empty string 
     const [token, setToken] = useState(localStorage.getItem('token') ? localStorage.getItem('token') : '')
+    //stores profile info fetched from backend after auth.
     const [userData, setUserData] = useState(false)
 
     // Getting Doctors using API
@@ -53,10 +57,12 @@ const AppContextProvider = (props) => {
 
     }
 
+    //get doctors data only once
     useEffect(() => {
         getDoctosData()
     }, [])
 
+    //get userdata on everytime teken changed
     useEffect(() => {
         if (token) {
             loadUserProfileData()

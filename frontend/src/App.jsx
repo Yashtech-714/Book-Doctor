@@ -10,7 +10,9 @@ import Appointment from './pages/Appointment'
 import MyAppointments from './pages/MyAppointments'
 import MyProfile from './pages/MyProfile'
 import Footer from './components/Footer'
+// To add toast notifications and warnings for specified time.
 import { ToastContainer } from 'react-toastify';
+// Default styling for react-toastify
 import 'react-toastify/dist/ReactToastify.css';
 import Verify from './pages/Verify'
 

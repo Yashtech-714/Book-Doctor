@@ -7,6 +7,7 @@ const Navbar = () => {
 
   const navigate = useNavigate()
 
+  // For mobile veiw
   const [showMenu, setShowMenu] = useState(false)
   const { token, setToken, userData } = useContext(AppContext)
 

@@ -8,16 +8,19 @@
     font-family: Outfit;
 }
 
+/* In Navbar, the active route to the page get underline  */
 .active hr {
     @apply block
 }
 
+/* For mobile veiw */
 @media (max-width:740px) {
     .active  p{
        @apply text-white bg-primary
     }
 }
 
+/* To hide the scrollbar in webkit based browsers */
 ::-webkit-scrollbar {
     @apply hidden
 }
