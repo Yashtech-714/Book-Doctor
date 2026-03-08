@@ -33,37 +33,6 @@ Healthcare appointment booking platform with:
 
 See [SETUP.md](SETUP.md) for detailed instructions.
 
-### Quick Start
-
-```bash
-# Clone repository
-git clone <repository-url>
-cd Book-Doctor
-
-# Install dependencies
-cd backend && npm install
-cd ../frontend && npm install
-cd ../admin && npm install
-
-# Create .env in backend directory
-MONGODB_URI=your_mongodb_uri
-JWT_SECRET=your_jwt_secret
-CLOUDINARY_NAME=your_cloudinary_name
-CLOUDINARY_API_KEY=your_cloudinary_api_key
-CLOUDINARY_SECRET_KEY=your_cloudinary_secret_key
-ADMIN_EMAIL=admin@example.com
-ADMIN_PASSWORD=secure_password
-STRIPE_SECRET_KEY=your_stripe_key
-RAZORPAY_KEY_ID=your_razorpay_id
-RAZORPAY_KEY_SECRET=your_razorpay_secret
-PORT=4000
-
-# Run applications
-cd backend && npm start          # Terminal 1
-cd frontend && npm run dev       # Terminal 2
-cd admin && npm run dev          # Terminal 3
-```
-
 **Access**: Frontend (http://localhost:5173), Admin (http://localhost:5174), API (http://localhost:4000)
 
 ## 📁 Project Structure
